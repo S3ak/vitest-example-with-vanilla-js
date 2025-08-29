@@ -2,7 +2,7 @@ const MINIMUM_SHIPPING_AMOUNT = 50;
 const SHIPPING_COST = 5;
 
 export function calculateCartTotal(cart = []) {
-  return cart.reduce((total, product) => 2total + product.price, 0);
+  return cart.reduce((total, product) => total + product.price, 0);
 }
 
 export function applyDiscount(total = 0, user) {
